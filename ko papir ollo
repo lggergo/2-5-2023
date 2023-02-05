@@ -1,0 +1,47 @@
+#ez a projekt ezen az oldalon tlaalhato meg ez python https://github.com/lggergo/2-5-2023.git 
+
+import random
+
+geplista = ["ko", "papir", "ollo"]
+geplistarandom = random.choice(geplista)
+Jatek = input ("Na Isten aldja. Hogy van ma? Arra gondoltam, hogy feldobhatnank a hangulatot egy kis ko papir ollovan. Mit valasztasz akarsz jatszani?\n")
+
+
+if Jatek == "igen" :
+    valasz = input ("ko papir vagy ollo?\n")
+    if valasz == geplistarandom :
+        print ("hat ez egyenlo talan legkozelebb nagyobb sikered lesz.")
+        print("en kifaradtam ennyi eleg mara")
+
+
+    elif valasz == "ko" and geplistarandom == "papir" :
+        print ("veszitettel az ellenfele " + geplistarandom + " volt")
+        print("en kifaradtam ennyi eleg mara")
+
+
+    elif valasz == "ko" and geplistarandom == "ollo":
+        print ("te nyertel, az ellenfele " + geplistarandom + " volt")
+        print("en kifaradtam ennyi eleg mara")
+
+    elif valasz == "papir" and geplistarandom == "ko":
+        print ("te nyertel, az ellenfele " + geplistarandom + " volt")
+        print("en kifaradtam ennyi eleg mara")
+
+
+    elif valasz == "papir" and geplistarandom == "ollo":
+        print ("veszitettel az ellenfele " + geplistarandom + " volt")
+        print("en kifaradtam ennyi eleg mara")
+
+
+    elif valasz == "ollo" and geplistarandom == "papir":
+        print("te nyertel, az ellenfele " + geplistarandom + " volt")
+        print("en kifaradtam ennyi eleg mara")
+
+
+    elif valasz == "ollo" and geplistarandom == "ko":
+        print("veszitettel az ellenfele " + geplistarandom + " volt")
+        print("en kifaradtam ennyi eleg mara")
+
+
+elif Jatek == "nem":
+    print("Hat ha majd kedved lesz akkor jatszhatunk.")
